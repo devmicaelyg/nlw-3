@@ -39,16 +39,11 @@ export default {
 
     const casasrepousoRepository = getRepository(CasaRepouso);
 
-    // const requestImages = req.files as Express.Multer.File[];
-
-    // const images = requestImages.map(image => {
-    //   return { path: image.filename }
-    // })
-
     const requestImages = req.files as Express.Multer.File[];
-        const images = requestImages.map(image => {
-            return { path: image.filename }
-        })
+
+    const images = requestImages.map(image => {
+      return { path: image.filename }
+    })
 
     const data = {
       name,
@@ -57,7 +52,7 @@ export default {
       about,
       instructions,
       opening_hours,
-      open_on_weekends,
+      open_on_weekends: open_on_weekends == 'true',
       images
     }
 
