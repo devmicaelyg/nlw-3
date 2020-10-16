@@ -66,7 +66,7 @@ const Mapper = () => {
       )})}
       </Map>
 
-      <Link to="/orphanages/create" className="create-casaDeRepouso">
+      <Link to="/create" className="create-casaDeRepouso">
         <FiPlus size={32} color="#FFF" />
       </Link>
     </div>
