@@ -13,8 +13,8 @@ const Routes = () => {
                 <Route path="/" exact component={Landing} />
                 <Route path="/app" component={Mapper}/>
 
-                <Route path="/orphanages/" exact component={Orphanage}/>
-                <Route path="/orphanages/create" component={CreateOrphanage}/>
+                <Route path="/orphanages/:id" component={Orphanage}/>
+                <Route path="/create" component={CreateOrphanage}/>
             </Switch>
         </BrowserRouter>
     );
