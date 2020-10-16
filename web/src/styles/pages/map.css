@@ -1,15 +1,14 @@
-#page-map{
+#page-map {
     width: 100vw;
     height: 100vh;
-
     position: relative;
     display: flex;
 }
+
 #page-map aside {
     width: 440px;
     background: linear-gradient(180deg, #03B55C 0%, rgba(0, 86, 43, 0.87) 100%);
     padding: 88px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,27 +29,54 @@
 #page-map aside footer {
     display: flex;
     flex-direction: column;
-
     line-height: 24px;
 }
 
-#page-map .create-casaDeRepouso{
+#page-map .create-casaDeRepouso {
     position: absolute;
     right: 48px;
     bottom: 40px;
-
     width: 64px;
     height: 64px;
     background: #03B55C;
     border-radius: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: background-color 2s;
 }
 
-#page-map .create-casaDeRepouso:hover{
+.create-casaDeRepouso:hover {
     background: chocolate;
+}
+
+#page-map .map-popup .leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+#page-map .map-popup .leaflet-popup-content {
+    color: rgba(0, 86, 43, 0.87);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-map .map-popup .leaflet-popup-content a {
+    width: 40px;
+    height: 40px;
+    background-color: #03B55C;
+    box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, 0.16);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-map .map-popup .leaflet-popup-tip-container {
+    display: none;
 }
